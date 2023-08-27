@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Jiang</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b26359497.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Justin Jiang</span><br />from New York City</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------About------------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hey there! I'm Justin and I'm a Computer Science student at the
+              University of Wisconsin-Madison. For me, computer science is an
+              endless journey of discovery, offering boundless opportunities to
+              redefine what's achievable. I see code as a powerful tool to
+              generate ideas, design user-specific solutions, and bring them to
+              life. The sense of fulfillment comes from not just imagining
+              experiences but also turning them into reality.
+            </p>
+            <br />
+            <p>
+              With each project I undertake, I grow to appreciate the profound
+              impact of computational power in creating positive value for the
+              communities I deeply care about. Currently, I'm on the lookout for
+              software engineering internships, eager to contribute my skills to
+              groundbreaking initiatives.
+            </p>
+            <br />
+            <p>
+              Feel free to explore my portfolio for further insights into my
+              experiences and projects. Let's build something remarkable
+              together!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('extracurricular')">
+                Extracurricular
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />Java, Python,
+                  JavaScript
+                </li>
+                <li>
+                  <span>Front-end Development</span><br />HTML, CSS, React
+                </li>
+                <li><span>Back-end Development</span><br />Firebase, SQL</li>
+                <li>
+                  <span>Content Management Systems (CMS)</span><br />WordPress
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="extracurricular">
+              <ul>
+                <li>
+                  <span>2022 - Present</span><br />Google Developer Student Club
+                </li>
+                <li><span>2022 - Present</span><br />Web Development Club</li>
+                <li><span>2019 - 2022</span><br />Investors Club</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022-2026</span><br />B.S. in Computer Science at the
+                  University of Wisconsin-Madison <br />Awards: Dean's List,
+                  National Society of Collegiate Scholars, Honor Society
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------My Work Experience----------------->
+    <div id="experience">
+      <div class="container">
+        <h1 class="sub-title">My Work Experience</h1>
+        <div class="experience-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Star Studio - Web Development Intern</h2>
+            <p>
+              Developed and maintained dynamic websites using HTML, CSS, and
+              WordPress within a fast-paced startup environment, catering to
+              diverse client requirements as a freelance web developer.
+              Collaborated with cross-functional teams, including designers and
+              developers, to implement responsive web design and optimize user
+              experience
+            </p>
+            <a href="https://xingtianstudio.com/" target="_blank">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <h2>theCoderSchool - Programming Instructor</h2>
+            <p>
+              Mentored aspiring programmers aged 6-16 through personalized
+              one-on-one sessions and group classes, delivering an extensive
+              project-focused curriculum in Java, Python, PixelPad, and Scratch.
+              Assisted in program coordination, including parent communication,
+              class organization, and promptly addressing phone inquiries,
+              ensuring smooth operations
+            </p>
+            <a href="https://www.thecoderschool.com/" target="_blank"
+              >Learn more</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-regular fa-paper-plane"></i>
+            <h2>ScienceHolic - Outreach Team Member</h2>
+            <p>
+              Reached out to school counselors, driving a 20% increase in
+              student membership in ScienceHolic magazine. Recruited
+              professionals in engineering and tech to join ScienceHolic as
+              reviewers of student works
+            </p>
+            <a href="https://www.scienceholic.org/" target="_blank"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------My Projects---------------->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>PowerPong</h3>
+              <p>
+                Enhanced a multiplayer Pong game using Java, AWT, Swing, OOP,
+                GUI, EDP, and game design principles. Engineered the UI by
+                integrating keyboard input for paddle movement controls, ball
+                physics, collision detection, a scoring system, and 4 randomized
+                power-ups, including point boosts, reductions, and paddle size
+                alterations. Leveraged multithreading techniques to establish a
+                fluid and responsive game loop, underscoring the ability to
+                oversee real-time simulations and ensure optimal performance in
+                interactive applications.
+              </p>
+              <a href="https://github.com/jus3472/PowerPong" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Bank Account Management System</h3>
+              <p>
+                Developed a Java Banking Application using OOP to manage savings
+                and checking accounts, featuring dynamic account creation,
+                transaction handling, and interest calculation. Implemented CSV
+                data parsing to seamlessly integrate customer information,
+                resulting in automated account instantiation and enriching user
+                experience through streamlined data input. Demonstrated
+                inheritance and polymorphism by creating an abstract Account
+                class and specialized subclasses (Savings, Checking), showcasing
+                varied account behaviors and encapsulating core banking
+                operations.
+              </p>
+              <a
+                href="https://github.com/jus3472/BankAccountManagementSystem"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Movie Guesser Game</h3>
+              <p>
+                A movie guessing game that compares the gross sales of random
+                movies and prompts the user to guess which one has higher sales,
+                using Java and object-oriented programming concepts. Has an
+                algorithm that extracts movie data from an XML file containing
+                the top 1000 highest grossing movies, and has an interface using
+                the Scanner class.
+              </p>
+              <a
+                href="https://github.com/jus3472/MovieGuesserGame"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/jus3472?tab=repositories"
+          target="_blank"
+          class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!-----------------Contact Me------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>jus3472@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>(347) 925-4167</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/justin.jiang.3551/"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/jiangj3472" target="_blank"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://www.instagram.com/justin.jiang/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/jiangjustin/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="https://docs.google.com/document/d/1SuFXYr-ig2gopXEUDQRZm1S3joTWefZIn_3S2eZ1xwQ/edit?usp=sharing"
+              target="_blank"
+              class="btn btn2"
+              >See Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Justin Jiang</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyr1x2NcUwqJfG7vEbTx5tp8EqIgqDKuBvWgTj594ssSKmeo8CR26sAaJ_NzIM65-UO/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
