@@ -24,13 +24,11 @@ body {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
-.logo{
-    width: 140px;
-    position: relative;
-    top: 45px;
+nav ul {
+    margin-top: 45px;
 }
 nav ul li {
     display: inline-block;
